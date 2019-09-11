@@ -192,7 +192,7 @@ client.on('message', fkk => {
 لديك 15 ثانية للاجابة`).then(msg1=> {
             var r = fkk.channel.awaitMessages(msg => msg.content == x2[x3], {
                 maxMatches : 1,
-                time : 15000,
+                time : 150000,
                 errors : ['time']
             })
         r.catch(() => {
